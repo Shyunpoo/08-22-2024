@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5EDED;
+}
+
+/* Menu de navigation */
+header {
+    background-color: #333;
+}
+
+header::after {
+    content: "";
+    display: block;
+    height: 5px;
+    background-color: #87D9FF;
+}
+
+.header-content {
+    padding: 10px;
+}
+
+.header-inner {
+    background-color: #333;
+}
+
+.top-section {
+    padding: 0 20px;
+}
+
+.top-section, .bottom-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img, .icon-nav img {
+    height: 50px;
+}
+
+.main-nav ul li a {
+    text-decoration: none;
+    font-family: 'bebas neue';
+    color: #f5eded;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-bottom: 2px;
+}
+
+.main-nav ul, .icon-nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-nav ul li, .icon-nav ul li {
+    margin-left: 20px;
+}
+
+.main-nav ul li a, .icon-nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav ul li a:hover, .icon-nav ul li a:hover {
+    color: #007BFF;
+}
+
+.search input {
+    width: 200px;
+    padding: 5px;
+    margin-right: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Bouton connexion */
+#dropdownMenu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#dropdownMenu.show {
+    display: block;
+}
+
+#dropdownMenu li {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+#userGreeting {
+    cursor: pointer;
+}
+
+/* PAGE */
+.tablinks {
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Style du contenu des onglets */
+.tabcontent {
+    display: none;
+    padding: 20px;
+}
+
+/* Style pour afficher le contenu actif */
+.tabcontent.active {
+    display: block;
+}
+
+
+
+
+  /* Footer */ 
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    text-align: left; 
+    position: relative;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+footer .colonne {
+    flex: 1;
+    margin: 0 20px;
+}
+
+footer h4 {
+    color: #87D9FF;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 5px;
+}
+
+footer a {
+    text-decoration: none !important;
+    color: #fff;
+}
+
+footer a:hover {
+    color: #87D9FF;
+}
+
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.reseaux-sociaux {
+    display: flex;
+    align-items: center;
+}
+
+.logo-reseau {
+    width: 30px; 
+    margin-right: 10px;
+}
+
+.button-newsletter {
+    background-color: #87D9FF;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border-style: none;
+}

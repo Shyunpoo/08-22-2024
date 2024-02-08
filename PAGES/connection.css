@@ -1,0 +1,71 @@
+/* Page de connexion */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.column {
+    flex: 25%;
+    max-width: 300px;
+    padding: 20px;
+    border-right: 1px solid #000000;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.column:last-child {
+    border-right: none;
+}
+
+.connexion h2 {
+    color: #5684C1;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.connexion hr {
+        margin-bottom: 20px;
+}
+
+.connexion form {
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.connexion label {
+    color: #5684C1;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #094FAC;
+    color: #F5EDED;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #5684C1;
+}
+
+.connexion a {
+    color: #094FAC;
+    text-decoration: none;
+    display: block;
+    margin: 20px auto; 
+    text-align: center;
+}
+
+.connexion a:hover {
+    text-decoration: underline;
+}

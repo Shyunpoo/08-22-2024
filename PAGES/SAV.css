@@ -1,0 +1,71 @@
+/* Styles pour le conteneur principal */
+.pagemain {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styles pour le titre */
+  .pagemain h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Styles pour la séparation */
+  .separation {
+    height: 2px;
+    background-color: #ddd;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles pour les groupes de champs */
+  .groupe {
+    margin-bottom: 20px;
+  }
+  
+  /* Styles pour les libellés */
+  .groupe label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  /* Styles pour les champs de saisie */
+  .groupe input[type="text"],
+  .groupe input[type="email"],
+  .groupe textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Styles pour les icônes */
+  .groupe i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #888;
+  }
+  
+  /* Styles pour le bouton */
+  .pied-formulaire button[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Styles pour le bouton au survol */
+  .pied-formulaire button[type="submit"]:hover {
+    background-color: #0056b3;
+  }

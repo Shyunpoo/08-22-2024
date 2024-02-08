@@ -1,0 +1,37 @@
+/* [PAGE] Détails du produit */
+.product-details {
+    max-width: 1000px; 
+    width: 80%;
+    margin: 50px auto;
+    background-color: #87D9FF;;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-details img {
+    display: block;
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    margin: 0 auto 20px;
+}
+
+
+.product-details p {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.texte {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: #333;
+}
+
+.testt {
+    width: auto;
+    height: 100% ! important;
+}

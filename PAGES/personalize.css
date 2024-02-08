@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+body{
+    background-color: #edf4f4;
+}
+
+
+div.pagemain {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 1230px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 500px;
+}
+h1.pagetitle {
+    margin: 90px auto;
+}
+div.keyboard-target-color {
+    display: flex;
+    width: 100%;
+    background-color: #edf4f5;
+    padding: 0px 20px 20px;
+}
+div.keyboard-target-color div.keyB-target {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+    flex: 0 0 auto;
+}
+div.keyboard-target-color div.keyB-color {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+#tgl-key-caps {
+    padding: 10px;
+    margin-top: 5px;
+}
+#tgl-key-text {
+    padding: 7px;
+    font-size: 25px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+div.tgl-button {
+    border: 1px solid #9c9797;
+    z-index: 3;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+div.color-option {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 15px 0px;
+}
+div.tgl-color {
+    height: 30px;
+    width: 30px;
+    max-width: initial;
+    border: 1px solid #646464;
+    z-index: 1;
+    transition: outline , 0.1s;
+}
+div.tgl-color:hover,#tgl-key-caps:hover,#tgl-key-text:hover{
+    outline: 1px solid #000000;
+    z-index: 2;
+}
+div.tgl-color.active,#tgl-key-caps.active,#tgl-key-text.active{
+    outline: 4px solid #000000;
+    z-index: 2;
+}
+
+div.keyB-step-selector {
+    position: relative;
+    align-self: flex-start;
+    display: flex;
+    width: 55%;
+    justify-content: space-between;
+    
+    margin-left: 5%;
+}
+div.keyB-step-selector div.stepline {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 24px;
+    background-color: #adadad;
+    z-index: -1;
+}
+div.keyB-step , div#Keybsave{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60px;
+    height: 50px;
+    border: 2px solid #adadad;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,.75);
+    transition: backgroundcolor  0.5s, color  0.1s , width 0.5s;
+}
+div.keyB-step:hover , div#Keybsave:hover{
+    background-color: #46c4ff;
+    color: #edf4f4;
+}
+div.keyB-step.active{
+    background-color: #0999e0;
+    color: #edf4f4;
+    width: 250px;
+    transition:backgroundcolor  0.5s, color  0.1s , width 0.3s;
+}
+
+div.customizer-keyboard {
+    width: 100%;
+    z-index: 3;
+}
+div.Switch-case {
+    display:flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 10px;
+    align-self: start;
+}
+div#keyboardmain {
+    z-index: 3;
+    width: 100%;
+    position: relative;
+    top: -110px;
+    transition: top 1s;
+}
+div.backplatepick {
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+div.radiotxt {
+    display: flex;
+    flex-direction: row;
+}
+.show {
+    display: inline !important;
+}
+.Case {
+    display: none;
+}
+input#radiobackplate1{
+    accent-color: #000000;
+}
+input#radiobackplate2{
+    accent-color: #c1c1c1;
+}
+input#radiobackplate3{
+    accent-color: #000000;
+}
+input#radiobackplate4{
+    accent-color: #6e6e6e;
+}
+input#radiobackplate5{
+    accent-color: #adadad;
+}
+select#attributeswitch {
+    font-size: 17px;
+    text-align: center;
+    width: 255px;
+    height: 30px;
+    border: 2px solid #adadad;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px -2px rgba(0,0,0,.75);
+    transition: backgroundcolor  0.5s, color  0.1s , width 0.5s;
+}
+select#attributeswitch:focus-visible {
+    border: 3px solid #094fac;
+}
+div.topkeyboard {
+    display: flex; 
+    width: 100%; 
+    margin-bottom: 20px;
+    justify-content: space-between;
+
+}
