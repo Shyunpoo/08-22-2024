@@ -69,3 +69,19 @@ input[type="submit"]:hover {
 .connexion a:hover {
     text-decoration: underline;
 }
+
+/* Media Query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 50%; /* Réduire la largeur des colonnes pour s'adapter à l'écran */
+        max-width: 100%;
+    }
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 576px) {
+    .column {
+        flex: 100%; /* Utiliser toute la largeur disponible sur les petits écrans */
+        max-width: 100%;
+    }
+}

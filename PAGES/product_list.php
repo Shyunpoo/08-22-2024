@@ -114,6 +114,7 @@ session_start();
                 echo '<p class="price">' . $row['prix'] . ' €</p>';
                 echo '<hr class="ligne-separatrice">';
                 echo '<a href="product_details.php?ref_produit=' . $row['ref_produit'] . '">Voir plus</a>';
+                echo '<a href="product_details.php?basket=' . $row['ref_produit'] . '">Ajouter au panier</a>';
                 echo '</div>';
                 echo '</div>';
             }
@@ -130,6 +131,26 @@ session_start();
     document.getElementById('sort').addEventListener('change', function() {
         var sortValue = this.value;
         window.location.href = 'product_list.php?tri=' + sortValue;
+    });
+</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Sélectionnez le formulaire
+        var form = document.querySelector('form');
+
+        // Ajoutez un écouteur d'événement sur la soumission du formulaire
+        form.addEventListener('submit', function(event) {
+            // Sélectionnez toutes les cases cochées pour la comparaison
+            var checkboxes = document.querySelectorAll('input[type="checkbox"][name="compare[]"]:checked');
+            
+            // Vérifiez s'il y a moins de 2 cases cochées
+            if (checkboxes.length < 2) {
+                // Empêchez la soumission du formulaire
+                event.preventDefault();
+                // Affichez un message à l'utilisateur pour lui indiquer de sélectionner au moins 2 éléments
+                alert('Veuillez sélectionner au moins 2 éléments à comparer.');
+            }
+        });
     });
 </script>
 

@@ -55,3 +55,17 @@
     height: auto;
     margin-top: 10px;
 }
+
+/* Media Query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .comparison-product {
+        width: 90%; /* Réduire la largeur pour s'adapter à l'écran */
+    }
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 576px) {
+    .comparison-product {
+        width: 100%; /* Utiliser toute la largeur disponible sur les petits écrans */
+    }
+}

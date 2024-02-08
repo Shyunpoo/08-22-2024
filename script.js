@@ -61,3 +61,5 @@ document.querySelectorAll('.heart').forEach(item => {
         xhr.send('image_id=' + imageId);
     });
 });
+
+

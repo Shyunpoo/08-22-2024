@@ -48,3 +48,17 @@
     border-radius: 10px;
     border-style: none;
 }
+
+/* Media Query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Media Query pour les petits écrans */
+@media screen and (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}

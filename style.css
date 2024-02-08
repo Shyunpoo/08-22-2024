@@ -186,10 +186,48 @@ footer img {
 }
 
 /* Newsletter */
-.button-newsletter {
-    background-color: #87D9FF;
-    color: #fff;
-    padding: 10px 15px;
-    border-radius: 10px;
-    border-style: none;
+/* Media Query pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    .header-content {
+        padding: 10px 20px;
+    }
+
+    .main-nav ul {
+        display: flex; /* Afficher la navigation principale en tant que flexbox */
+        justify-content: center; /* Centrer les éléments de la navigation */
+    }
+
+    .main-nav ul li {
+        display: initial; /* Rétablir l'affichage des éléments de la liste */
+        margin-left: 20px; /* Ajouter une marge entre les éléments */
+    }
+
+    .icon-nav {
+        display: flex; /* Afficher la navigation avec des icônes */
+    }
+
+    .icon-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon-nav ul li {
+        margin-left: 10px; /* Ajuster l'espacement entre les éléments */
+    }
+
+    .search input {
+        width: auto; /* Réduire la largeur de l'entrée de recherche */
+        margin-right: 0; /* Supprimer la marge de droite */
+    }
+
+    #dropdownMenu {
+        position: static; /* Modifier la position pour qu'elle soit statique */
+        display: none; /* Cacher le menu déroulant */
+        background-color: transparent; /* Supprimer la couleur de fond */
+        box-shadow: none; /* Supprimer l'ombre */
+    }
+
+    #dropdownMenu.show {
+        display: none; /* Ne pas afficher le menu déroulant */
+    }
 }

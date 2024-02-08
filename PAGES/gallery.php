@@ -75,6 +75,9 @@ $images = $statement->fetchAll(PDO::FETCH_ASSOC);
             <h2>Envoyer une image</h2>
             <form action="upload.php" method="post" enctype="multipart/form-data">
                 <input type="file" name="image" accept="image/*" required>
+                <hr class="ligne-separatrice">
+                <p>ATTENTION : Pour pouvoir contribuer à la galerie, il vous faudra être connecté</p>
+                <hr class="ligne-separatrice">
                 <button type="submit">Envoyer</button>
             </form>
         </div>

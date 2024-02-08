@@ -88,9 +88,7 @@ session_start();
                 // Ajouter d'autres détails du produit si nécessaire
                 echo '</div>';
             }
-        } else {
-            echo '<p class="comparison-message">Veuillez sélectionner deux produits à comparer.</p>';
-        }
+        } 
         ?>
 
     
